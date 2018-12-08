@@ -1,0 +1,119 @@
+<html>
+<head>
+    <title>Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+           *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        section div{
+            width: 25%;
+           box-shadow: 0px 0px 2px 0px;
+            display: inline-block;
+            margin: 0;
+            vertical-align: top;
+            
+        }
+        
+        section div h3{
+
+            margin: 0;
+            text-align: center;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        section div ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        section div ul li{
+            width: 100%;
+            list-style: none;
+              background-color: gray;
+            
+        }
+        
+        section div ul li a{
+            display: inline-block;
+            text-decoration: none;
+        padding: 10px 5px;
+            width: 100%;
+            color: white;
+            border: gray 1px solid;
+            
+        }
+        
+        section div ul li:hover a{
+            background-color:  #f8f6f4;;
+            color: #244f96;
+        font: bold;
+            
+        }
+        section iframe {
+            width: 71%;
+            border: none;
+            display: inline-block;
+            min-height: 2650px;
+         
+        }
+            @media screen and (max-width: 600px) {
+                iframe{
+                    height: 3000px;
+                    width: 100%;
+                    
+                }
+            
+        }
+        .active{
+            background-color: #244f96 !important;
+            color: white !important;
+        }
+    
+    </style>
+    </head>
+<body>
+<section>
+<div>
+    <ul>
+        <h3>Services</h3>
+     <li><a onclick="addActiveClass(this)" class="active" href="../home-page-html/basic.html" target="home_main_part">Basic</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/doctor.html" target="home_main_part">Doctors</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/hospitals.html" target="home_main_part">Hospitals</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/post_office.html" target="home_main_part">Post office</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/schools.html" target="home_main_part">School</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/banks.html" target="home_main_part">Banks</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/e-mitra.html" target="home_main_part">E-mitra</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/police.html" target="home_main_part">Police</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/grampanchayat.html" target="home_main_part">Grampanchayat</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/call_taxi.html" target="home_main_part">Call taxi</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/transport.html" target="home_main_part">Transport</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/shops_in_village.html" target="home_main_part">Shops in Village</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/cars_on_rent.html" target="home_main_part">Cars & Bus on rent</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/history.html" target="home_main_part">History</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/how_to_reach.html" target="home_main_part">How to reach</a></li>
+    <li><a onclick="addActiveClass(this)" href="../home-page-html/other_services.html" target="home_main_part">Other Services</a></li>
+    </ul>
+</div>
+
+    
+   
+    <iframe id="iframe" name="home_main_part" src="../home-page-html/basic.html"></iframe>
+        
+</section> 
+    <script>
+    function addActiveClass (thisElement) {
+       document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+
+        document.getElementsByClassName('active')[0].classList.remove('active');
+        thisElement.classList.add('active');
+       
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>Sarsar</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: auto;
+            padding: 0px;
+            max-width: 1100px;
+            height: auto;
+            background-color: #f8f6f4;
+            box-shadow: 1px 16px 7px 4px grey;
+            
+            
+        }
+        header{
+            background-image: url(images/header%20background.jpg);
+            width: 100%;
+            height: 150px;
+            color: white;
+            border-radius: 10px  10px 0px 0px;
+        }
+        header #firstdiv{
+            width: 25%;
+            display: inline-block;
+             max-width: 290px;
+        }
+        header #firstdiv img{
+            height: 100%;
+           
+            width: 100%;
+            box-shadow: 0px 1px 5px 0px white;
+        }
+       
+        #heading {
+            vertical-align: top;
+            text-align: center;
+            height: 100%;
+            width: 70%;
+           display: inline-block;
+        }
+        #heading div {
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #heading p{
+            margin: 0;
+        }
+        
+        nav {
+             border-radius: 10px;
+           
+        }
+        
+       
+        nav ul {
+            text-align: center;
+          margin: 0;
+            padding: 0px;
+          
+           
+        }
+        nav ul li{
+            display: inline-block;
+            width: 20%;  
+            margin: 0;
+            padding: 0;
+        }
+   
+   
+        nav ul li:hover a{
+              background-color:  #f8f6f4;;
+           /* color: #244f96;*/
+              font: bold;
+           /* color: darkgray;*/
+            color: black;
+            
+            
+        }
+        
+        nav ul li a{
+            display: inline-block;
+            width: 100%;
+           padding:7px 0;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+             background-color: gray;
+            cursor: pointer;
+             
+        } 
+        
+
+        
+        main iframe{
+            width: 100%;
+            min-height: 3020Px;
+         
+            
+        }
+        .home_active{
+            background-color: #244f96;
+        }
+        
+        
+        
+        @media screen and (max-width: 600px) {
+            #firstdiv{
+                display: none !important;
+            }
+            
+
+            
+            iframe{
+            height:  3010px;
+                width: 100%;
+            }
+            #heading {
+                width: 100%;
+            }
+            header{
+                height: 100px !important;
+            }
+
+        }
+
+        
+        
+        footer{
+        color: white;
+             background-color: dimgray;
+            text-align: center;
+            padding: 10px 30px;
+        }
+
+      
+    </style>
+</head>
+    
+    <body>
+    <header>
+        <div id="firstdiv">
+             <img src="images/logo(1).jpg">
+      
+        </div>
+         <div id="heading">
+             <div>
+            <h2>SARSAR</h2>
+            <p>The Village of big heart owner - Rajasthan</p>
+             </div>
+           </div>
+    </header>
+        
+        <nav>
+            <div>
+        <ul>
+        <li><a onclick="home_active(this)" class="home_active" href="html/home.html" target="myiframe">Home</a></li><li><a  onclick="home_active(this)" href="html/images.html" target="myiframe">Images</a></li><li><a onclick="home_active(this)" href="html/temples.html" target="myiframe">Temples</a></li><li><a onclick="home_active(this)" href="html/fastivals.html" target="myiframe">Fastivals</a></li><li><a onclick="home_active(this)" href="html/about.html" target="myiframe">About</a></li>    
+        </ul>
+        </div>
+        </nav>
+    <main>
+        <div id="main_iframe">
+       <iframe name="myiframe" src="html/home.html"></iframe>
+        </div>
+    </main>
+    
+    
+    
+    
+      <footer>
+    <p>A website Developed by Ramakant Joshi.</p>
+    </footer>
+    <script>
+          
+    function home_active(thisElement) {
+ 
+
+        document.getElementsByClassName('home_active')[0].classList.remove('home_active');
+        thisElement.classList.add('home_active');
+       
+    }
+    </script>
+       
+    </body>
+</html>
